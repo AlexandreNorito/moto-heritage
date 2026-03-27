@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MOTO HERITAGE | Explore Vintage Japanese Parts</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-fixed-variant": "#464747",
+                        "on-tertiary": "#402d00",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "on-tertiary-fixed": "#261a00",
+                        "inverse-surface": "#e5e2e1",
+                        "surface-variant": "#353534",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "inverse-on-surface": "#313030",
+                        "surface-container": "#201f1f",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-primary-fixed": "#380d00",
+                        "on-tertiary-container": "#372700",
+                        "on-background": "#e5e2e1",
+                        "on-error": "#690005",
+                        "error": "#ffb4ab",
+                        "on-surface": "#e5e2e1",
+                        "inverse-primary": "#a93700",
+                        "on-tertiary-fixed-variant": "#5b4300",
+                        "on-secondary-container": "#b6b5b4",
+                        "secondary-fixed": "#e4e2e2",
+                        "error-container": "#93000a",
+                        "on-surface-variant": "#e1bfb4",
+                        "secondary": "#c7c6c6",
+                        "on-primary": "#5b1a00",
+                        "background": "#131313",
+                        "primary-fixed": "#ffdbcf",
+                        "on-secondary": "#303030",
+                        "tertiary": "#f1bf4c",
+                        "primary-container": "#f1652d",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-dim": "#131313",
+                        "primary": "#ffb59b",
+                        "outline-variant": "#594139",
+                        "surface": "#131313",
+                        "on-primary-fixed-variant": "#812800",
+                        "primary-fixed-dim": "#ffb59b",
+                        "surface-tint": "#ffb59b",
+                        "surface-container-low": "#1c1b1b",
+                        "on-primary-container": "#501600",
+                        "outline": "#a88a80",
+                        "surface-bright": "#3a3939",
+                        "tertiary-fixed": "#ffdf9e",
+                        "surface-container-highest": "#353534",
+                        "tertiary-container": "#b68a17",
+                        "secondary-container": "#464747",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#f1bf4c"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Work Sans"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Work Sans', sans-serif;
+        }
+        .mechanical-switch-click:active {
+            transform: scale(0.95);
+        }
+        .grain-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary-container selection:text-on-primary-container">
+<div class="grain-overlay fixed inset-0 z-[100]"></div>
+<!-- TopNavBar Shell -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-xl no-border bg-gradient-to-b from-[#131313] to-transparent">
+<div class="flex justify-between items-center px-8 py-4 w-full max-w-none">
+<div class="text-2xl font-bold tracking-tighter text-[#f1652d] font-headline uppercase">MOTO HERITAGE</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Space_Grotesk'] uppercase tracking-widest text-sm text-[#e5e2e1] hover:text-[#ffb59b] transition-colors duration-150" href="#">Engine</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-widest text-sm text-[#e5e2e1] hover:text-[#ffb59b] transition-colors duration-150" href="#">Exhaust</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-widest text-sm text-[#e5e2e1] hover:text-[#ffb59b] transition-colors duration-150" href="#">Electrical</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-widest text-sm text-[#e5e2e1] hover:text-[#ffb59b] transition-colors duration-150" href="#">Frame</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="mechanical-switch-click text-[#e5e2e1] hover:bg-[#3a3939] p-2 rounded-sm transition-all duration-150">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="mechanical-switch-click text-[#e5e2e1] hover:bg-[#3a3939] p-2 rounded-sm transition-all duration-150">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-32 px-4 md:px-8 max-w-7xl mx-auto">
+<!-- Search & Filter Archive Control -->
+<section class="mb-16">
+<div class="bg-surface-container p-1 shadow-inner">
+<div class="flex flex-col md:flex-row gap-px bg-outline-variant/15">
+<div class="flex-grow flex items-center bg-surface-container-highest px-6 py-4">
+<span class="material-symbols-outlined text-primary mr-4" data-icon="search">search</span>
+<input class="bg-transparent border-none focus:ring-0 w-full font-headline uppercase tracking-widest text-sm placeholder:text-on-surface-variant/40" placeholder="SEARCH ARCHIVE (E.G. KH400 PISTON)" type="text"/>
+</div>
+<div class="grid grid-cols-2 md:flex bg-surface-container-highest">
+<select class="bg-transparent border-none focus:ring-0 font-headline uppercase tracking-widest text-xs px-6 py-4 border-r border-outline-variant/10">
+<option>MANUFACTURER</option>
+<option>HONDA</option>
+<option>YAMAHA</option>
+<option>KAWASAKI</option>
+<option>SUZUKI</option>
+</select>
+<select class="bg-transparent border-none focus:ring-0 font-headline uppercase tracking-widest text-xs px-6 py-4">
+<option>DECADE</option>
+<option>1960S</option>
+<option>1970S</option>
+<option>1980S</option>
+</select>
+</div>
+</div>
+</div>
+</section>
+<!-- The CB750 Collection Hero -->
+<section class="mb-20">
+<div class="relative group overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 bg-gradient-to-r from-background via-transparent to-transparent z-10"></div>
+<div class="grid md:grid-cols-2 min-h-[500px] items-center">
+<div class="relative z-20 p-8 md:p-16">
+<span class="inline-block bg-tertiary-container text-on-tertiary-container font-label text-[10px] px-3 py-1 mb-6 uppercase tracking-[0.2em]">Curated Archive v.04</span>
+<h1 class="text-6xl md:text-8xl font-headline font-bold leading-[0.85] tracking-tighter uppercase mb-6 text-on-surface">
+                            The CB750<br/><span class="text-primary-container">Collection</span>
+</h1>
+<p class="font-body text-on-surface-variant max-w-md mb-8 leading-relaxed">
+                            A precision-curated selection of SOHC engine components, from machined valve covers to period-correct sandcast replicas. Engineered for the "King of Motorcycles."
+                        </p>
+<button class="bg-primary-container text-on-primary-container px-8 py-4 font-headline font-bold uppercase tracking-widest text-sm hover:bg-primary transition-all duration-150 mechanical-switch-click">
+                            EXPLORE ENGINE ARCHIVE
+                        </button>
+</div>
+<div class="relative h-full min-h-[400px]">
+<!-- SUBSTITUA: imagem hero da coleção CB750 (sugerido: 1280x500px, foto do motor Honda CB750) -->
+<img class="absolute inset-0 w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" alt="Close-up detail of a vintage Honda CB750 engine" src="https://placehold.co/1280x500/1c1b1b/594139?text=HERO+CB750+%281280x500%29"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Grid: Engineered Elements -->
+<section class="mb-20">
+<div class="flex items-baseline justify-between mb-8 border-b border-outline-variant/15 pb-4">
+<h2 class="font-headline text-3xl font-bold uppercase tracking-tighter">System Categories</h2>
+<span class="font-label text-xs uppercase tracking-[0.3em] text-on-surface-variant/50">Filter by Assembly</span>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Engine -->
+<div class="bg-surface-container p-8 hover:bg-surface-bright transition-colors group cursor-pointer relative overflow-hidden">
+<span class="material-symbols-outlined text-5xl mb-6 text-primary block" data-icon="settings_input_component">settings_input_component</span>
+<h3 class="font-headline text-xl font-bold uppercase mb-2">Engine</h3>
+<p class="font-label text-[10px] text-on-surface-variant tracking-wider">CYLINDERS / PISTONS / CRANK</p>
+<div class="absolute bottom-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-icon="arrow_outward">arrow_outward</span>
+</div>
+</div>
+<!-- Exhaust -->
+<div class="bg-surface-container p-8 hover:bg-surface-bright transition-colors group cursor-pointer relative overflow-hidden">
+<span class="material-symbols-outlined text-5xl mb-6 text-primary block" data-icon="air">air</span>
+<h3 class="font-headline text-xl font-bold uppercase mb-2">Exhaust</h3>
+<p class="font-label text-[10px] text-on-surface-variant tracking-wider">HEADERS / MUFFLERS / BAFFLES</p>
+<div class="absolute bottom-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-icon="arrow_outward">arrow_outward</span>
+</div>
+</div>
+<!-- Suspension -->
+<div class="bg-surface-container p-8 hover:bg-surface-bright transition-colors group cursor-pointer relative overflow-hidden">
+<span class="material-symbols-outlined text-5xl mb-6 text-primary block" data-icon="rebase_edit">rebase_edit</span>
+<h3 class="font-headline text-xl font-bold uppercase mb-2">Suspension</h3>
+<p class="font-label text-[10px] text-on-surface-variant tracking-wider">FORKS / REAR SHOCKS / SPRINGS</p>
+<div class="absolute bottom-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-icon="arrow_outward">arrow_outward</span>
+</div>
+</div>
+<!-- Electrical -->
+<div class="bg-surface-container p-8 hover:bg-surface-bright transition-colors group cursor-pointer relative overflow-hidden">
+<span class="material-symbols-outlined text-5xl mb-6 text-primary block" data-icon="bolt">bolt</span>
+<h3 class="font-headline text-xl font-bold uppercase mb-2">Electrical</h3>
+<p class="font-label text-[10px] text-on-surface-variant tracking-wider">WIRING / IGNITION / LIGHTING</p>
+<div class="absolute bottom-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-icon="arrow_outward">arrow_outward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Recently Added: Individual Parts -->
+<section class="mb-20">
+<div class="flex items-baseline justify-between mb-8 border-b border-outline-variant/15 pb-4">
+<h2 class="font-headline text-3xl font-bold uppercase tracking-tighter text-primary">Recently Uncovered</h2>
+<a class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors" href="#">View All Archive</a>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Part 1: Carburetor -->
+<div class="bg-surface-container-low group">
+<div class="aspect-square relative overflow-hidden bg-surface-container-highest">
+<!-- SUBSTITUA: foto do produto Mikuni VM28 Carburetor Set (sugerido: 600x600px, fundo escuro) -->
+<img class="w-full h-full object-cover mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-500" alt="Mikuni VM28 Carburetor Set" src="https://placehold.co/600x600/353534/ffb59b?text=PRODUTO+1%0AMikuni+VM28%0A%28600x600%29"/>
+<div class="absolute top-4 left-4">
+<span class="bg-surface-container px-3 py-1 font-label text-[10px] uppercase border border-outline-variant/20 tracking-widest">In Stock</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline font-bold uppercase text-lg leading-tight">Mikuni VM28 Carburetor Set</h4>
+<span class="font-headline font-bold text-primary">$485.00</span>
+</div>
+<p class="font-label text-[10px] text-on-surface-variant uppercase tracking-widest mb-4">Fits: Kawasaki Z1 / KZ900</p>
+<button class="w-full bg-surface-container-highest text-on-surface py-3 font-headline text-xs font-bold uppercase tracking-widest hover:bg-primary-container hover:text-on-primary-container transition-colors">Add to Garage</button>
+</div>
+</div>
+<!-- Part 2: Tachometer -->
+<div class="bg-surface-container-low group">
+<div class="aspect-square relative overflow-hidden bg-surface-container-highest">
+<!-- SUBSTITUA: foto do produto ND Nippon Seiki Tachometer (sugerido: 600x600px, fundo escuro) -->
+<img class="w-full h-full object-cover mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-500" alt="ND Nippon Seiki Tachometer" src="https://placehold.co/600x600/353534/ffb59b?text=PRODUTO+2%0ANippon+Seiki%0A%28600x600%29"/>
+<div class="absolute top-4 left-4">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 font-label text-[10px] uppercase tracking-widest">Rare Find</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline font-bold uppercase text-lg leading-tight">ND Nippon Seiki Tachometer</h4>
+<span class="font-headline font-bold text-primary">$210.00</span>
+</div>
+<p class="font-label text-[10px] text-on-surface-variant uppercase tracking-widest mb-4">Fits: Suzuki GT750 'Water Buffalo'</p>
+<button class="w-full bg-surface-container-highest text-on-surface py-3 font-headline text-xs font-bold uppercase tracking-widest hover:bg-primary-container hover:text-on-primary-container transition-colors">Add to Garage</button>
+</div>
+</div>
+<!-- Part 3: Fender -->
+<div class="bg-surface-container-low group">
+<div class="aspect-square relative overflow-hidden bg-surface-container-highest">
+<!-- SUBSTITUA: foto do produto OEM Chrome Front Fender (sugerido: 600x600px, fundo escuro) -->
+<img class="w-full h-full object-cover mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-500" alt="OEM Chrome Front Fender" src="https://placehold.co/600x600/353534/ffb59b?text=PRODUTO+3%0AOEM+Fender%0A%28600x600%29"/>
+<div class="absolute top-4 left-4">
+<span class="bg-surface-container px-3 py-1 font-label text-[10px] uppercase border border-outline-variant/20 tracking-widest">NOS</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-headline font-bold uppercase text-lg leading-tight">OEM Chrome Front Fender</h4>
+<span class="font-headline font-bold text-primary">$175.00</span>
+</div>
+<p class="font-label text-[10px] text-on-surface-variant uppercase tracking-widest mb-4">Fits: Yamaha XS650 Heritage</p>
+<button class="w-full bg-surface-container-highest text-on-surface py-3 font-headline text-xs font-bold uppercase tracking-widest hover:bg-primary-container hover:text-on-primary-container transition-colors">Add to Garage</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar Shell -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-4 pt-2 bg-[#131313]/90 backdrop-blur-lg border-t border-[#594139]/15 shadow-[0_-4px_20px_rgba(241,101,45,0.05)] z-50 md:hidden">
+<a class="flex flex-col items-center justify-center text-[#e5e2e1]/60 p-2 hover:text-[#f1652d] transition-colors duration-150" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="history_edu">history_edu</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold uppercase tracking-wider">Archive</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#f1652d] text-[#131313] rounded-sm p-2 scale-105 shadow-lg" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="search">search</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold uppercase tracking-wider">Search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e5e2e1]/60 p-2 hover:text-[#f1652d] transition-colors duration-150" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="handyman">handyman</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold uppercase tracking-wider">Garage</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e5e2e1]/60 p-2 hover:text-[#f1652d] transition-colors duration-150" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold uppercase tracking-wider">Profile</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest py-16 px-8 mt-20">
+<div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+<div class="col-span-2">
+<div class="text-3xl font-headline font-bold text-primary uppercase mb-6 tracking-tighter">MOTO HERITAGE</div>
+<p class="font-body text-on-surface-variant max-w-sm mb-6">Restoring the golden era of Japanese engineering, one bolt at a time. Authenticity guaranteed on every vintage part in our archive.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-outline" data-icon="public">public</span>
+<span class="material-symbols-outlined text-outline" data-icon="share">share</span>
+<span class="material-symbols-outlined text-outline" data-icon="contact_support">contact_support</span>
+</div>
+</div>
+<div>
+<h5 class="font-headline font-bold uppercase text-xs tracking-widest mb-6">Manifesto</h5>
+<ul class="space-y-4 font-label text-[10px] text-on-surface-variant uppercase tracking-wider">
+<li><a class="hover:text-primary transition-colors" href="#">Our History</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Quality Control</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Shipping Logistics</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Authenticity Guide</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-bold uppercase text-xs tracking-widest mb-6">Newsletter</h5>
+<div class="flex">
+<input class="bg-surface-container border-none text-xs font-label uppercase tracking-widest p-4 flex-grow focus:ring-1 focus:ring-primary transition-all" placeholder="JOIN ARCHIVE" type="email"/>
+<button class="bg-primary-container p-4 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
